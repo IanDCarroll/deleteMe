@@ -5,6 +5,8 @@ _Credit for Kata:_
 
 Kata by [Josh Cheek](http://joshcheek.com/) as part of my apprenticeship at [8th Light](http://www.8thlight.com/).
 
+Repo of origin: https://github.com/JoshCheek/strscan-kata
+
 Go watch the [video](http://vimeo.com/29823879)!
 
 _Thanks Josh, for the indirect instruction :smile: - Ian_
