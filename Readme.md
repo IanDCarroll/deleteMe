@@ -11,6 +11,15 @@ Go watch the [video](http://vimeo.com/29823879)!
 
 _Thanks Josh, for the indirect instruction :smile: - Ian_
 
+Setup
+=====
+[Install rvm](https://rvm.io/rvm/install)
+`$ git clone git@github.com:IanDCarroll/deleteMe.git`
+`$ cd deleteMe`
+`$ gem install guard-rspec`
+You're ready to kata.
+
+
 MIT License
 ===========
 
