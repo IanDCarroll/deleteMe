@@ -11,5 +11,9 @@ class IanStrscan
 
   def scan(regex)
     match = @string[regex]
+    if @string.start_with? match
+      return match
+    end
+    nil
   end
 end
