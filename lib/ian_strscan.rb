@@ -2,7 +2,7 @@ class IanStrscan
   attr_accessor :string
 
   def initialize(string)
-    @string = string
+    @string = string.dup
   end
 
   def eos?
