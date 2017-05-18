@@ -40,4 +40,11 @@ describe 'IanStrscan scan' do
     And { " " == subject.scan(/\s+/) }
     And { "def" == subject.scan(/\w+/) }
   end
+
+  context 'when scan does not change the original string' do
+    Given(:string) { "abc def" }
+    When(:subject) { IanStrscan.new string }
+    Then{ "abc" == subject.scan(/\w+/) }
+    And { "abc def" == string }
+  end
 end
