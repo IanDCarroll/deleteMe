@@ -10,6 +10,6 @@ class IanStrscan
   end
 
   def scan(regex)
-    "abc"
+    match = @string[regex]
   end
 end
