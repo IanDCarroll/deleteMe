@@ -3,21 +3,23 @@ About
 
 _Credit for Kata:_
 
-Kata by [Josh Cheek](http://joshcheek.com/) as part of my apprenticeship at [8th Light](http://www.8thlight.com/).
+Kata by [Josh Cheek](http://joshcheek.com/) as part of my apprenticeship at [8th Light](http://www.8thlight.com/).</br>
+Additonal kata interpretation by [Richard Cheng](https://github.com/rlcheng)
 
 Repo of origin: https://github.com/JoshCheek/strscan-kata
 
 Go watch the [video](http://vimeo.com/29823879)!
 
-_Thanks Josh, for the indirect instruction :smile: - Ian_
+_Thanks Josh, for the indirect instruction_</br>
+_Thanks Richard, for the direct instruction :smile: - Ian_
 
 Setup
 =====
-[Install rvm](https://rvm.io/rvm/install)
-`$ git clone git@github.com:IanDCarroll/deleteMe.git`
-`$ cd deleteMe`
-`$ gem install guard-rspec`
-`$ gem install rspec-given`
+[Install rvm](https://rvm.io/rvm/install)</br>
+`$ git clone git@github.com:IanDCarroll/deleteMe.git`</br>
+`$ cd deleteMe`</br>
+`$ gem install guard-rspec`</br>
+`$ gem install rspec-given`</br>
 You're ready to kata.
 
 
