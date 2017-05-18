@@ -15,6 +15,6 @@ class IanStrscan
       @string.sub!(match, "")
       return match
     end
-    nil
+    rescue TypeError
   end
 end
