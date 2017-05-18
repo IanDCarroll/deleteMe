@@ -12,4 +12,10 @@ describe 'IanStrscan eos?' do
     When(:subject) { IanStrscan.new string }
     Then { false == subject.eos? }
   end
+
+  context 'when string is empty' do
+    Given(:string) { "" }
+    When(:subject) { IanStrscan.new string }
+    Then { true == subject.eos? }
+  end
 end
