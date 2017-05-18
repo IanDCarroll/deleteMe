@@ -1,8 +1,11 @@
 class IanStrscan
+  attr_accessor :string
+
   def initialize(string)
+    @string = string
   end
 
   def eos?
-    false
+    @string.empty?
   end
 end
