@@ -17,6 +17,7 @@ Setup
 `$ git clone git@github.com:IanDCarroll/deleteMe.git`
 `$ cd deleteMe`
 `$ gem install guard-rspec`
+`$ gem install rspec-given`
 You're ready to kata.
 
 
