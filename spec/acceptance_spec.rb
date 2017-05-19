@@ -1,7 +1,8 @@
 require 'rspec/given'
+require 'ian_strscan'
 
 describe 'Acceptance Test' do
-  Given(:s) { StringScanner.new('This is an example string') }
+  Given(:s) { IanStrscan.new('This is an example string') }
   Then{ false     == s.eos?        }
   And { "This"    == s.scan(/\w+/) }
   And { nil       == s.scan(/\w+/) }
