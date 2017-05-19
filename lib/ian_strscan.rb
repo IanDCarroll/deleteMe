@@ -10,6 +10,9 @@ class IanStrscan
   end
 
   def scan(regex)
-    "abc"
+    match = @string[regex]
+    if @string.start_with? match
+      match
+    end
   end
 end
