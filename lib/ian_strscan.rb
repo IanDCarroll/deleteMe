@@ -12,6 +12,7 @@ class IanStrscan
   def scan(regex)
     match = @string[regex]
     if @string.start_with? match
+      @string.sub!(match, "")
       match
     end
   end
