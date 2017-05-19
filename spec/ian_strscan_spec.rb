@@ -19,3 +19,11 @@ describe 'IanStrscan eos?' do
     Then { true == subject.eos? }
   end
 end
+
+describe 'IanStrscan scan' do
+  context 'when regex matches current position' do
+    Given(:string) { "abc def" }
+    When(:subject) { IanStrscan.new string }
+    Then { "abc" == subject.scan(/\w+/) }
+  end
+end
