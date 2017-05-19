@@ -36,9 +36,15 @@ describe 'IanStrscan scan' do
   context 'when scan remebers its current position' do
     Given(:string) { "abc def" }
     When(:subject) { IanStrscan.new string }
-   Then { "abc" == subject.scan(/\w+/) }
-   And  { " " == subject.scan(/\s+/) }
-   And  { "def" == subject.scan(/\w+/) }
+    Then { "abc" == subject.scan(/\w+/) }
+    And  { " " == subject.scan(/\s+/) }
+    And  { "def" == subject.scan(/\w+/) }
+  end
 
+  context 'when scan does not change the original string' do
+    Given(:string) { "abc def" }
+    When(:subject) { IanStrscan.new string }
+    Then { "abc" == subject.scan(/\w+/) }
+    And  { "abc def" == string }
   end
 end
