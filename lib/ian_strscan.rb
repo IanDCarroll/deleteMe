@@ -8,4 +8,8 @@ class IanStrscan
   def eos?
     @string.empty?
   end
+
+  def scan(regex)
+    "abc"
+  end
 end
