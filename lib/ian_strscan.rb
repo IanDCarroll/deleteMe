@@ -1,5 +1,5 @@
 class IanStrscan
-  attr_accessor = @string
+  attr_accessor :string
 
   def initialize(string)
     @string = string
@@ -10,6 +10,9 @@ class IanStrscan
   end
 
   def scan(regex)
-    "abc"
+    match = @string[regex]
+    if @string.start_with? match
+      match
+    end
   end
 end

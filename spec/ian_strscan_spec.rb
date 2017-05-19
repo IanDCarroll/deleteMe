@@ -22,8 +22,14 @@ end
 
 describe 'IanStrscan scan' do
   context 'when regex matches current position' do
-    Given(:string) { "abc_def" }
+    Given(:string) { "abc def" }
     When(:subject) { IanStrscan.new(string) }
-    Then { 'abc' == subject.scan(/\w+/) } 
+    Then { "abc" == subject.scan(/\w+/) } 
+  end
+
+  context 'when regex does not match' do
+    Given(:string) { "abc def" }
+    When(:subject) { IanStrscan.new(string) }
+    Then { nil == subject.scan(/\s+/) }
   end
 end
