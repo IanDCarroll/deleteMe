@@ -47,4 +47,11 @@ describe 'IanStrscan scan' do
     Then { "abc" == subject.scan(/\w+/) }
     And  { "abc def" == string }
   end
+
+  context 'when scan scans an empty string' do
+    Given(:string) { "" }
+    When(:subject) { IanStrscan.new string }
+    Then { nil == subject.scan(/\w+/) }
+
+  end
 end
