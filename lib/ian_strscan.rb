@@ -15,5 +15,6 @@ class IanStrscan
       @string.sub!(match, "")
       match
     end
+    rescue TypeError
   end
 end
